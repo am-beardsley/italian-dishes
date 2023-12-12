@@ -1,0 +1,301 @@
+<!--Welcome to "About Me." The comments throughout this file (like this one) will help you design a webpage that contributes to your final project while building your coding literacy. We'll work through these instructions until about **4:25 p.m.** At that point, I'll ask you to pause and go to the Discussion – About Me Page Part I on WO.-->
+
+<!--Refer to Horton and Quesenbery (2013) chapter four, "Solid structure: Built to standards" (pp. 49–64), and chapter five, "Easy interaction: Everything works" (pp. 65–86) while you work. -->
+
+<!--Will these comments show up on your webpage? Nope! Comments, which appear faded between an exclamation point and two dashes, can be left in HTML files. They're a form of notes that programmers and web designers use to explain the code to collaborators.-->
+
+<!--You'll want to view your website while making changes. You will have to set up a web server port to view it online. Everything you need to do happens here using VS Code for the Web. 
+1. Open the "Terminal." Click "Toggle Panel" located on the top right of the screen.
+2. The Terminal is open! Type "npm i -g http-server" in the terminal window and hit enter.
+3. Type "http-server" in the terminal window, and hit enter.
+4. A pop-up notification that says your application is running will appear. Click the "Open in Browser" button.
+
+You should now have a separate browser window that shows you a preview of your website. Don't worry! It's not visible to the public just yet; we'll go over publishing your website later.-->
+
+<!--HTML pages start by calling <!DOCTYPE html> and designating a language ("en" for English). The information in the <angle brackets> organizes the code for clarity and flow.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Next comes the <head> information including the title and the important links that make the webtext work. When a browser accesses your url, it "reads" the index.html document <head> first to learn the names and locations of the files and assets it will need to assemble your code into a visual display.-->
+
+  <!--The current <title> for the page is About Me (see just below). The <title> will appear in your document's browser tab. You can leave this title or change it up, but make sure it conveys the page's content.-->
+<title>Italian Dishes</title>
+<!--The stuff below the title does important work to tell browsers what this page should look like on different screens. Leave this code as-is.-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Next is a link to the cascading style sheet or CSS. Web designers use CSS to add styling to a website. Designers do this by "calling" a <div class> in HTML and defining the class attributes on the style sheet. Doing so saves time and results in less code. You'll find attributes relating font, text size, image size, among other details on the style.css page. Your webpage will not work without this.-->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!--That concludes the important metadata that begins every HTML page. You can see where tags begin and end. Closing tags use a forward slash. So, <head> is an opening tag and </head> tells the browser where that information ends.-->
+
+<body>
+<!--Now we will start working in the body of the document. The body holds all of the code and content that will appear as a visual for our audience. It's broken up into containers using the <div> tag to group content together.-->
+
+<!--Designers refer to this next section as a "Hero Image." The hero image is styled on the style.css page by calling a "class." Replace the hero image with one that you'd like to use. To replace the hero image, simply place a .jpg file in the same file folder (directory) as this project and name it "hero.jpg." Alternatively, if you are working with a .png, you will need to open the style.css file using your text editor, find the "hero-image" class and change the file type from ".jpg" to ".png."" Browsers will only work with .jpg, .jpeg, or .png images. Since hero images need to stretch across the screen, typically you will want to select an image 1200px in width to allow quick load time yet avoid pixilation.-->
+
+
+<div class="hero-image">
+  <div class="hero-text">
+      <h1>Italian Dishes</h1>
+  </div>
+</div>
+<!--Tip: Want to change the color of the <h1> text? You'll need to locate the information on the stylesheet. Find the code by looking for the class info (class="hero-text").-->
+
+
+<!--We'll use this first section to discuss where you are right now. Where do you go to school and what courses are you taking/enjoying? What majors/minors/certificates are you pursuing? Has this changed? Why? How do your courses contribute to the job you want when you graduate? Replace the content between <h3> and </h3> that says "Lorem ipsum" etc.-->
+
+
+<!--Fuego programs sometimes use "in-line styling" to provide quick fixes to content design. In the above case, you could change "left" to "right" or "center" depending on your specific design needs. That said, left align is usually best practice for improving readability.-->
+
+<div class="textblock" style="text-align: left">
+  <h2>About Me</h2>
+  <p>Hello! My name is Alyssa, an Education Major attending Western Illinois University. This is my second year at WIU and I couldn't be happier with the college choice I chose. One of the biggest things about me is that I love Italian food; pizza, lasagna, chicken Alfredo, and so many more Italian dishes.  </p>
+  </div>
+
+
+
+<!--Replace the images here. You can also control max-image width%. Keep your file names simple, don't use spaces, and be case sensitive. Be sure to add alt="text." Visually impaired individuals using screen readers rely on alt="text" to describe pictures to them. Describe your image as clearly and succinctly as possible.-->
+
+
+  <img src="pic.jpeg" alt="describe the image HERE for accessibility purposes" class="center-img" style="width:50%;"></img>
+
+
+
+<!--Let's go a bit deeper. What are you into? What are your interests, values, and principles? Take some time to explain your passions. How did these influences impact where you are now?-->
+
+<div class="textblock" style="text-align: left">
+<h2>My Philosophy</h2>
+<p>Since I was a little kid, I have loved to read and write. This strived me  to pursue an English major, and as an English Major who loves to read and write, I find it extremely important to understand what I am reading and writing. It irritates me when I  stumble across a misspelled  word, or when a body of text is hard to understand due to its font, size, colors, and so on. I love grammar and in my free time, I like to brush up on it, as well as vocabulary words! There are so many things to learn, and the English  dictionary can be a great place to start.
+<p>
+<p>I also love Italian food, which inspired me to create a blog about Italian dishes such as pizza, chicken Alfredo, lasagna, and so on. There are many blogs about Italian dishes, but some of them may contain difficult fonts to read, or aren’t friendly to individuals who have a hard time on the internet; this is why I am creating my Italian dish website. Everyone should be thought of when creating a website, not just a few select that you think can read your blog. It is so important to me to create a friendly website that everyone can assess without a problem!
+</p>
+<p>This website will contain Italian dish recipes, the origin, and a lot of great information about the dish itself. I strive to create a website that everyone can enjoy and can learn from; it is vital to me that everyone is included. Why doesn’t want to learn about Italian dishes, anyways?
+<div class="textblock" style="text-align: left">
+</div>
+<h2>Project Abstract</h2>
+<p>This project is dedicated to foodways research in a lot of ways, but the main reason is that is I feel like people should know more about Italian food, aside from it being extremely good! A lot of people don't know the history behind most Italian food, and I think that it is extremely important for individuals to know the history behind the dishes. For example, not all Italian food come from Italy! Not only is it super important to know the history behind Italian dishes, but we should appreatiate the culture behind the food and value it as a whole. The culture is extremely rich and full of great information that everyone should know, even those who appretiate the food as it is. Throughout this website, you will learn more than you did before, and I hope you learn to love Italian food a little more after you're done!</p>
+<div class="textblock" style="text-align: left">
+</div>
+<h2>Cornerstone</h2>
+<p>Hello, and welcometo my blog. My name is Alyssa and over the course of the Fall semester of 2023, I have been conducting an Italian Dish website for one of my English classes. If you haven’t read any of the blogs, do not fret, as this blog explains in-depth what my website is all about.</p>
+<h3>Why Learn About Italian Food?</h3>
+<p>Over the course of the Fall semester, I have dedicated my time to creating a website that holds a lot of valuable information about Italian food. Since I was a little kid, Italian food has been one of my favorite foods to eat; and why doesn’t want to learn about Italian dishes?  There are many reasons why Italian food is so important, such as the simplicity of the food, the rich history, and the delicious tastes! There are so many reasons why everyone should learn about the cuisine, and this website is one of the best places to start. </p>
+<h3>Inside the Website</h3>
+<p>In this website, you’ll find everything you need to learn about the Italian cuisine, such as the history of some Italian dishes, where to get them, and even some simple recipes you can easily make at home! There are five blogs posted on the website that have great information about the main Italian dishes you desire.</p>
+<em>The Wild History of Breadsticks</em>
+<p>Breadsticks are one of the most popular appetizers in the world, and it has a great, wild history. They originated from Italy in 1675 when an ill duke didn’t have the appetite to eat anything else. After he recovered,the duke became the king and a main dish in the household. Soon after, the dish slowly became one of the most popular in the world. There are many great recipes for breadsticks as well, some even containing cheese inside! </p>
+<em>The Truth About Chicken Alfredo</em>
+<p>Pasta and noodles are one of the staples when it comes to Italian food; there are so many options with pastas, and don’t get me started on the different shapes! One of the most popular pastas out there is chicken Alfredo; a classic yet simple dish to make at home. Chicken Alfredo started in Rome in 1908, but it’s nothing like the one we now know. Although it’s extremely popular in the United States, it’s not that popular in Rome or Italy; in fact, some people in Rome don’t know it’s a dish. </p>
+<em>All About Spaghetti</em>
+<p>Another popular pasta in the United States is spaghetti; so simple yet a great classic to cook. The popularity of pasta came from the 20th century and grows every year. There are debates on whether or not spaghetti came from Italy, but some believe that an individual named Marco Polo brought it back from his voyage from China. You can find any different spaghetti recipes you can easily make at home, or go to an Italian-based restaurant and eat it there!</p>
+<em>Bread, Sauce, and Toppings</em>
+<p>Another famous Italian dish is one that everyone (hopefully) loves; one that you can customize with many different toppings: pizza. This delicious dish comes in a circle, but cut in triangles (or sometimes squares). You can put so many different toppings on pizza, mainly meat and veggies, but sometimes even pineapple. The original pizza came from the 18th century in Naples. The city experienced a wide range of lower-class people that had nothing to eat, and the people that owned little shops needed money; so, the lower-class individuals bought mushrooms and and herbs cooked on a stale loaf of bread. From there on, it became a great widespread dish. “In the United States, 350 slices of pizza are eaten every second and at least 40% of Americans eat pizza once a week”, Jeffery Miller states (Miller, 2019). It is an extremely popular dish and grows every day! </p>
+<em>Raviolli Appreation</em>
+<p>The last dish talked about on the Italian Food website is Ravioli. There are different kinds of Ravioli you can eat, and you can easily make this dish at home as well. The word “ravioli” comes from the Italian word “rivvolgere”, which translate to “to wrap”.  You wrap ravioli and it contains either meat or cheese inside, and is a great staple in Italy. There are many different ways you can make the dish, but it mainly consists of pasta dough, meat or cheese, and boiling water! </p>
+<h3>Check it Out!</h3>
+<p>There are many different reasons why you should check these blogs out; they contain such rich information, recipes, and so much more! This is just a glimpse of the Italian-based website, and I’m sure you won’t be disappointed. </p>
+<img src="breadsticks.jpeg" alt="describe the image HERE for accessibility purposes" class="center-img" style="width:100%"></img>
+<h2>The Wild History of Breadsticks</h2>
+<p>Breadsticks go well with everything; especially pasta dishes. The history of the delicious bread originated from Italy in 1675 when the young duke - Vittorio Amedo II - was seriously ill at nine years old. The doctor noted that he got food poisoning from bread that his mother was feeding him, which caused him to be so ill. He made their baker create a new bread that the boy could digest a lot better so he would be able to eat properly. 
+<p>
+<p>The duke recovered after that and became the king in 1713. That bread became the top bread choice in their household, and slowly became a delicious side dish. 
+</p>
+<p>To this present day, breadsticks now come in different forms. Unlike the original breadstick that was created in the late 1600s, the breadstick we now know has many different seasonings and herbs to really make that flavor pop. It is now a classic side dish that comes with many entrees, such as salads, soups, pizza, pastas, and more! </p>
+</div>
+<div class="textblock" style="text-align:left">
+  <div>
+    <img src="chickenalfredo.jpeg" alt="describe the image HERE for accessibility purposes" class="center-img" style="width:100%"></img>
+<h2>The Truth About Chicken Alfredo</h2>
+<p>Chicken Alfredo - or sometimes called Alfredo pasta - is an extremely popular dish that originated from Italy. However, the Chicken Alfredo we have in the United States is nothing like the Alfredo that originated from Italy. It all started when a man named Alfredo di Lelio came up with the dish in Rome in 1908; research says that he came up with the dish after his wife told him she was exhausted after giving birth. You may be asking yourself: well, how did Alfredo’s dish become so popular? Well, in the 1920s, a couple Hollywood stars had the idea to visit Rome on their honeymoon, and had the opportunity to taste Alfredo’s dish. They thanked him and even called him the “king of noodles”. When they went back to the States, they spread the word of the delicious pasta, and it became one of the most famous pasta dishes in the world.
+</p>
+<p>Although it is very popular in the United States today, it isn’t popular in Rome; in fact, almost no one serves it in restaurants! It never took off in Rome like it did across the world. In fact, some people in Rome don’t know it’s a thing. However, it is still very popular overseas, and many people enjoy it to this day.</p>
+</div>
+<div class="textblock" style="text-align:left">
+</div>
+<img src="spagetti.jpeg" alt="describe the image HERE for accessibility purposes" class="center-img" style="width:100%"></img>
+<h2>All About Spaghetti</h2>
+<p>There are many pastas that have originated from all over, one of those pastas being spaghetti. Some people believe that spaghetti came from Italy, but others believe that Marco Polo brought it back from his voyage from China. There isn’t much research about spaghetti, besides from it being brought from another country! 
+</p>
+<p>Spaghetti comes from the word “Spago”, which translate to “string” or “twine”. Because of the texture, Spaghetti can easily handle a tomato,  as well as virgin oil. This is why the pasta is served with tomato sauce, followed by meat and vegetables. It is also served with delicious breadsticks, which we’ve discussed earlier in the blogs.
+</p>
+<p>You can find spaghetti all over the world, despite it being from across the country. The popularity of pasta began around the 20th century and keeps on growing over the years. You can find many types of spaghetti noodles in grocery stores, but the most common one we know is the long, thin noodle. This dish is served in many places, especially Italian-based restaurants.  
+</p>
+</div>
+<div class="textblock" style="text-align:left">
+  <img src="pizza.jpeg" alt="describe the image HERE for accessibility purposes" class="center-img" style="width:100%"></img>
+<h2>Bread, Sauce, and Toppings</h2>
+<p>Although we would like to take credit, pizza did not originate from the United States. In fact, pizza originates as far back as the ancient Greek and Roman times! An individual named Virgil wrote about individuals of Trojan citizens fleeding their cites destruction and landed in Latium, Italy. They found themselves extremely hungry and devoured a meal of mushrooms and herbs cooked on stale round loaves. From there on, pizza became famous and widespread. 
+</p>
+<p>However, the pizza we know today is much different. This pizza came from the 18th century Naples. The city experienced a surge of peasants that were hungry for anything, and they needed something simple and cheap to eat. Vendors began making pizzas with topping as simple as garlic and salt, but sometimes had tomatoes and cheese. 
+</p>
+<p>The first Pizzeria opened in 1738 as a stand for Naples peddlers. Around 100 years later, that same spot expanded and got chairs and tables for customers. The individual who opened the delicious spot to eat was Antica Pizzeria Port’Alba! </p>
+</div>
+<div class="textblock" style="text-align:left">
+  <img src="ravioli.jpeg" alt="describe the image HERE for accessibility purposes" class="center-img" style="width:100%"></img>
+<h2>Ravioli Appreation</h2>
+<p>The word “ravioli” originates from the Italian word “rivvolgere” which means “to wrap”. This dish has become a favorite among many in the United States despite it originating further back in history. Ravioli is technically considered a dumpling that contains filling between slices of pasta. Ravioli comes in many different shapes and forms, but the msot common one we know is a square that has either cheese or meat inside. Today, it is an extremely popular food you can buy froze, canned, or packaged at your local grocery store. There are many commercials about Ravioli and how it is such a simple dish to whip up! This dish is commonly served with a broth or sauce, and is a staple in Italy.
+</p>
+<p>This dish originated from Italy, dating back as far as the 14th century. However, there were mentions of ravioli in the 14th century in England as well; one of King Richard II’s chefs had a cookbook that contained a recipe for ravioli. 
+</p>
+<p>There are many different ways to make ravioli, but all it is made of is pasta dough, filling, and placed together in a pot of boiling water!</p>
+</div>
+<div class="textblock" style="text-align:left">
+<em>End</em>
+<p>This is where we part ways. I hope you found some interesting facts about Italian dishes you did not know, and I hope you had fun reading through the website. Until next time!</p>
+<div class="textblock" style="text-align:center"></div>
+<a href="https://authenticaworldcuisine.com/get-to-know-the-fascinating-history-of-italian-cuisine/#:~:text=The%20roots%20of%20Italian%20cuisine,%2C%20cheese%2C%20and%20seasonal%20vegetables." target="_blank">Italian Food History</a> <a href="https://blog.scuolaleonardo.com/2022/07/25/the-origin-of-grissini-breadsticks/#:~:text=According%20to%20legend%2C%20the%20invention,the%20crumb%20of%20the%20bread." target="_blank">Breadstick History</a> <a href="https://mitaliakitchen.com/blog/the-history-of-spaghetti" target="_blank">Spaghetti Facts!</a> <a href="https://www.history.com/news/a-slice-of-history-pizza-through-the-ages" target="_blank">Who Invented Pizza?</a> <a href="https://toscanaslc.com/blog/ravioli-an-appreciation/" target="_blank">Ravioli Appreation</a> <a href="https://www.forbes.com/sites/johnmariani/2021/08/10/why-fettuccine-allalfredo-is-one-of-the-worlds-greatest-simplest-dishes/?sh=527a53bb6147" target="_blank">Chicken Alfredo History</a> 
+
+
+
+
+
+
+<!--Quick fact: Did you know "Lorem ipsum," the fill text used in this web template, was hacked out of Cicero's "De finibus bonorum et malorum"? Developers made it non-sensical, and it's used as placeholder text.-->
+
+
+
+<!--Show us your interests. Find photos and pictures that represent who you are, what you're intrested in, and what you believe. If you are concerned about issues of privacy, you can always use stock images, or get creative. Add these photos to your project folder, making sure the files end in .jpg or .png and replace the names in the grid code below. You can add more images if you wish, or subtract, but know that you might also need to move content around to achieve balance. See what happens! Since these images are smaller, you will want to resize your images to less than 600px in width. This will improve load time and thus general accessibility. Don't forget to add alt="text"!-->
+
+<!--A photo grid uses rows and column classes to create some divisions on the page that will scale with mobile devices. Scaling, or responsive design, ensures that users can access content whether they're on a computer, tablet, or phone. The style.css page provides other attributes that will adjust the image depending on the size of screens.-->
+
+
+
+<!--Let's talk a little about the future. After school what kind of job or career would you like to pursue? What is your reasoning for going on this path? How might it connect to your field of study, interests, values, and principles? Why is this job or career important to you? Why is it important generally?-->
+
+
+
+  <!--The next image is a way to mark the end of the page. Change the image to one that uses color to reflect your content or leaves them with a lasting impression of who you are.-->
+ 
+
+  <!--I mentioned in the README file that our template was modeled after Stephen Quigley's (2022) [Open Fuego coding tool](https://kairos.technorhetoric.net/26.2/disputatio/quigley/openfuego.html). Leave Quigley's logo as a way to give him credit for the template.-->
+   
+
+    <!--Looking to add components? You've come to the right place. Copy and paste Code Snippets and add to the body section. Adjust class properties on style.css.
+
+
+    ***Add Text Block***
+
+    (Format textblock using inline styling: text-align: left, center, justify, right; Format text: Italics: <em>italics</em>; Bold: <b>bold</b>; Link Website: <a href="link">LinkName</a>; Link Asset: <a href=filename.pdf>FileName</a>; Line Breaks: <br></br>; Tip for composing longer content: use <h3> and <p> instead of <h2> and <h3>)
+
+    <div class="textblock" style="text-align: left">
+        <h2>Header</h2>
+        <h3>We recommend using our mobile-ready text sizing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+    </div>
+
+
+
+    ***Add Block Quote***
+
+    (Format text: Italics: <em>italics</em>; Bold: <b>bold</b>. For more stylings, find blockquote class on style.css)
+
+    <div class="blockquote" style="text-align: center">
+        <h2>Excepteur sint occaecat cupidatat non proident!</h2>
+    </div>
+
+
+
+    ***Add Bulleted Points to Textblock***
+
+    (Change <ul></ul> to <ol></ol> to change from unordered list to ordered list. For more stylings, find the ul/li classes on style.css)
+
+    <div class= "ul">
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+    </div>
+
+    -or- (try a nested list)
+
+    <div class="ul">
+        <li>Coffee</li>
+        <li>Tea
+          <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+          </ul>
+         </li>
+        <li>Milk</li>
+     </div>
+
+
+
+     ***Add a Button***
+
+     (Clearly label button for accessibility purposes. If this is not possible, include: aria-label=”label for accessibility purposes.” For more stylings, find button class on style.css)
+
+     <div class="buttonbox">
+        <a href="https://open-fuego.github.io/Open-Fuego-Coding-Tools/" class="button" aria-label="">Button</a>
+     </div>
+
+
+
+
+    ***Embed YouTube Video***
+
+  <div class="video">
+     <div class="video-container">
+       <<iframe width="560" height="315" src="https://www.youtube.com/embed/PhPLTpqG0pU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
+     </div>
+       <p>Add a caption.</p>
+    </div>
+
+
+
+    ***Add a Standard Image***
+
+    (Control image properties with inline width value.)
+
+    <img src="fuego.jpg" alt="describe the image HERE for accessibility purposes" style="width:30%;" class="center-img">
+    <p style="text-align: center"><em>Add a caption.</em></p>
+
+
+
+    ***Add Image Block with Padding and Caption*** (Control image properties with inline width value.)
+
+    <div class="imgageblock">
+        <img src="fuego.jpg" alt="describe the image HERE for accessibility purposes" style="width:100%;">
+         <p style="text-align: center"><em>Add a caption.</em></p>
+    </div>
+
+
+
+    ***Add a Photo Grid***
+
+    <div class="photogrid">
+    <div class="row">
+        <div class="column">
+            <img src="pgrid1.jpg" alt="describe the image HERE for accessibility purposes">
+            <img src="pgrid2.jpg" alt="describe the image HERE for accessibility purposes">
+        </div>
+        <div class="column">
+            <img src="pgrid3.jpg" alt="describe the image HERE for accessibility purposes">
+            <img src="pgrid4.jpg" alt="describe the image HERE for accessibility purposes">
+        </div>
+        <div class="column">
+            <img src="pgrid5.jpg" alt="describe the image HERE for accessibility purposes">
+            <img src="pgrid6.jpg" alt="describe the image HERE for accessibility purposes">
+        </div>
+    </div>
+        <p><em>Add a caption.</em></p>
+    </div>
+
+
+
+    ***Add a Parallax Window***
+
+    (To adjust window, find parallax class on style.css)
+
+    <div class="parallax"></div>
+
+
+
+    ***Add a Copyright Footer***
+
+    <div id="footer">
+      <p>Copyright Your Name, Year.</p>
+    </div>
+
+
+
+
+    ***Need something that's not here? Then you probably don't need it. Remember: we want to keep it simple! If you need additional help, go to w3 Schools (https://www.w3schools.com/).***-->
